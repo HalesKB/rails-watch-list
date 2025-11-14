@@ -7,8 +7,10 @@
 </ul>
 <% end %>
 
+
+<h2>You can add another below:</h2>
 <%= simple_form_for([@list, @bookmark]) do |f| %>
   <%= f.input :comment %>
   <%= f.association :movie %>
-  <%=  f.submit "Add it on" %>
+  <%= f.submit "Add it on" %>
 <% end %>
